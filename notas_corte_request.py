@@ -1,6 +1,8 @@
+import os
 import requests
 import pandas as pd
 from time import sleep
+
 
 # A cada parcial, faremos requisições para o site obtenod informações sobre cada nota de corte
 # Faremos requisições para o site https://sisu-api-pcr.apps.mec.gov.br/api/v1/oferta/{}/modalidades em que {} é substituido pelo código do oferecimento
@@ -10,6 +12,7 @@ except:
     print("Necessário gerar arquivo lista_cursos.csv\nPara isso, rode o programa lista_cursos.request.py")
     exit()
 
+diretorio = "Data"
 arquivo_final_csv = input("Digite o nome do arquivo em será guardado os dados finais (sem extensão): ")
 
 url_modalidades = "https://sisu-api-pcr.apps.mec.gov.br/api/v1/oferta/{}/modalidades"
@@ -51,4 +54,4 @@ for index, codigo_oferta in enumerate(codigos_oferta):
 
         dataframe_modalidades = dataframe_modalidades.append(dados, ignore_index=True)
     
-dataframe_modalidades.to_csv("/Data/" + arquivo_final_csv + ".csv", sep=";", index=False)
+dataframe_modalidades.to_csv(os.path.join(diretorio, arquivo_final_csv + ".csv"), sep=";", index=False)
