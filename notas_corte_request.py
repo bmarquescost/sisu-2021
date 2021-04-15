@@ -30,7 +30,7 @@ for index, codigo_oferta in enumerate(codigos_oferta):
             print(f"[{codigo_oferta}] Erro ocorreu na requisição, tentando novamente")
     
     while resposta.status_code != 200:
-        print(f"[{codigo_ofera}] Erro {resposta.status_code}")
+        print(f"[{codigo_oferta}] Erro {resposta.status_code}")
         resposta = requests.get(url_modalidades.format(codigo_oferta))
         sleep(1)
         continue
