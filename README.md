@@ -9,21 +9,7 @@ Todas os dados a seguir foram recolhidos na madrugada do dia mencionado.
 
 As parciais do dia 07/04 são, na verdade, é referente as opções escolhidas pelo aluno no dia 06/04 e por ai em diante.
 
-**[Parcial 07/04](https://raw.githubusercontent.com/bmarquescost/sisu-2021/main/Data/notas_parcial_07_04.csv)**
-
-**[Parcial 08/04](https://raw.githubusercontent.com/bmarquescost/sisu-2021/main/Data/notas_parcial_08_04.csv)**
-
-**[Parcial 09/04](https://raw.githubusercontent.com/bmarquescost/sisu-2021/main/Data/notas_parcial_09_04.csv)**
-
-**[Parcial 10/04](https://raw.githubusercontent.com/bmarquescost/sisu-2021/main/Data/notas_parcial_10_04.csv)**
-
-**[Parcial 11/04](https://raw.githubusercontent.com/bmarquescost/sisu-2021/main/Data/notas_parcial_11_04.csv)**
-
-**[Parcial 12/04](https://raw.githubusercontent.com/bmarquescost/sisu-2021/main/Data/notas_parcial_12_04.csv)**
-
-**[Parcial 13/04](https://raw.githubusercontent.com/bmarquescost/sisu-2021/main/Data/notas_parcial_13_04.csv)**
-
-**[Parcial 14/04](https://raw.githubusercontent.com/bmarquescost/sisu-2021/main/Data/notas_parcial_14_04.csv)**
+| **[Parcial 07/04](https://raw.githubusercontent.com/bmarquescost/sisu-2021/main/Data/notas_parcial_07_04.csv)** | **[Parcial 08/04](https://raw.githubusercontent.com/bmarquescost/sisu-2021/main/Data/notas_parcial_08_04.csv)** |  **[Parcial 09/04](https://raw.githubusercontent.com/bmarquescost/sisu-2021/main/Data/notas_parcial_09_04.csv)** | **[Parcial 10/04](https://raw.githubusercontent.com/bmarquescost/sisu-2021/main/Data/notas_parcial_10_04.csv)** | **[Parcial 11/04](https://raw.githubusercontent.com/bmarquescost/sisu-2021/main/Data/notas_parcial_11_04.csv)** | **[Parcial 12/04](https://raw.githubusercontent.com/bmarquescost/sisu-2021/main/Data/notas_parcial_12_04.csv)** | **[Parcial 13/04](https://raw.githubusercontent.com/bmarquescost/sisu-2021/main/Data/notas_parcial_13_04.csv)** | **[Parcial 14/04](https://raw.githubusercontent.com/bmarquescost/sisu-2021/main/Data/notas_parcial_14_04.csv)** |
 
 ### OBS:
 As parciais dos dias 7, 8, 9, 11 e 12 foram feitas com classificação fantasma: participantes que passaram nas notas de corte em suas duas opções de curso eram contabilizados nas duas listas, e ainda regulavam a nota de corte os dois cursos.
