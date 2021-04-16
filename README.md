@@ -14,9 +14,8 @@ As parciais do dia 07/04 são, na verdade, é referente as opções escolhidas p
 ## Lista completa de alunos aprovados
 A lista de alunos selecionados foi recolhida no dia 16/04, quando saiu os resultados do SISU, ou seja, da primeira chamada.
 
-| Lista em formato CSV                                                                                                     | Lista completa com classificação | 
-|:------------------------------------------------------------------------------------------------------------------------:|:--------------------------------:|
-|   [Selecionados](https://raw.githubusercontent.com/bmarquescost/sisu-2021/main/Data/alunos_selecionados.csv)             |                ...               | 
+| **[Lista em formato](https://raw.githubusercontent.com/bmarquescost/sisu-2021/main/Data/alunos_selecionados.csv)** | **Lista completa com classificação**  
+
 
 ### OBS:
 As parciais dos dias 7, 8, 9, 11 e 12 foram feitas com classificação fantasma: participantes que passaram nas notas de corte em suas duas opções de curso eram contabilizados nas duas listas, e ainda regulavam a nota de corte os dois cursos.
