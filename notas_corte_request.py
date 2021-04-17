@@ -21,7 +21,8 @@ codigos_oferta = dataframe_cursos["codigo_oferta"]
 
 dataframe_modalidades = pd.DataFrame()
 for index, codigo_oferta in enumerate(codigos_oferta):
-    
+
+    # Fazendo requsição até que dê tudo certo
     while True:
         try:
             resposta = requests.get(url_modalidades.format(codigo_oferta))
@@ -29,18 +30,17 @@ for index, codigo_oferta in enumerate(codigos_oferta):
         except:
             print(f"[{codigo_oferta}] Erro ocorreu na requisição, tentando novamente")
     
-    while resposta.status_code != 200:
+    # Caso a resposta não seja 200 (OK) então vamos para o próximo código de oferta
+    if resposta.status_code != 200:
         print(f"[{codigo_oferta}] Erro {resposta.status_code}")
-        resposta = requests.get(url_modalidades.format(codigo_oferta))
-        sleep(1)
         continue
-
+    
     dados_modalidades = resposta.json()
 
     print(f"[{index + 1} / {codigos_oferta.shape[0]}] {dataframe_cursos.loc[index, 'nome_ies']} ({dataframe_cursos.loc[index, 'sigla_ies']}) {dataframe_cursos.loc[index, 'nome_curso']}")
     
-    for modalidade in dados_modalidades["modalidades"]:
-            
+    # A resposta é um json com várias modalidades, então para cada modalidade iremos guardar seus dados
+    for modalidade in dados_modalidades["modalidades"]:   
         dados = {
             "codigo_oferta": codigo_oferta,
             "codigo_concorrencia": modalidade["co_concorrencia"],
@@ -54,4 +54,5 @@ for index, codigo_oferta in enumerate(codigos_oferta):
 
         dataframe_modalidades = dataframe_modalidades.append(dados, ignore_index=True)
     
+# Salvando os dados em um arquivo CSV
 dataframe_modalidades.to_csv(os.path.join(diretorio, arquivo_final_csv + ".csv"), sep=";", index=False)

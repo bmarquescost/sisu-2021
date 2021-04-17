@@ -67,5 +67,6 @@ for i, instituicao in enumerate(instituicoes):
 
         ofertas.append(dados_relevantes_instituto)
 
+# Criando um dataframe e o salvando em um arquivo CSV
 df = pd.DataFrame(ofertas)
 df.to_csv('lista_cursos.csv', sep = ';', index=False)

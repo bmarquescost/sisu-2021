@@ -24,6 +24,8 @@ for codigo_oferta, index in zip(cursos["codigo_oferta"], cursos.index):
    
     resposta = resposta.json()
 
+    # A resposta obtida consiste em um JSON com o nome, codigo do enem, bonus percentual, classificação, nota em seu curso, codigo de modalidade e a descrição da modalidade de ingresso
+    # Para conseguir relacionar o aluno ao curso escolhido, guardamos também o codigo de oferta, que esse aluno passou
     for aluno in resposta:
         dados_aluno = {
             'nome': aluno['no_inscrito'],
@@ -38,5 +40,6 @@ for codigo_oferta, index in zip(cursos["codigo_oferta"], cursos.index):
 
         todos_alunos.append(dados_aluno)
 
+# Salvando os dados em um dataframe e armazenando em um arquivo CSV para posterior análise 
 df = pd.DataFrame(todos_alunos)
 df.to_csv(diretorio + '/alunos_selecionados.csv', sep=';', index=False)
